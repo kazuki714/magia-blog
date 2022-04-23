@@ -1,10 +1,13 @@
 import { client } from "../../libs/client";
+import { Nav } from "../../components/Nav";
 
 export default function BlogId({ blog }) {
   return (
     <main>
+      <Nav />
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
+      <p className="category">{blog.category && `${blog.category.name}`}</p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.content}`,
