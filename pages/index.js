@@ -13,7 +13,7 @@ export default function Home({ blog }) {
               <div key={blog.id}>
                 <a>
                   <img alt="blog photo" src="image/inu.jpg" class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:w-80 cursor-pointer m-auto max-h-40 w-full object-cover"/>
-                  <div class="bg-white dark:bg-gray-800 w-full p-4">
+                  <div class="bg-transparent w-full p-4">
                     <p class="text-gray-800 dark:text-white text-xm font-medium mb-2">
                       {blog.title}
                     </p>
