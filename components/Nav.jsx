@@ -9,8 +9,8 @@ export const Nav = () => {
         <div class="flex items-center">
           <a
             href="/"
-            aria-label="Ayuret"
-            title="Ayuret"
+            aria-label="Top"
+            title="Top"
             class="inline-flex items-center mr-8"
           >
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">
@@ -99,11 +99,11 @@ export const Nav = () => {
                   <div>
                     <a
                       href="/"
-                      aria-label="Company"
-                      title="Company"
+                      aria-label="Top"
+                      title="Top"
                       class="inline-flex items-center"
                     >
-                      <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                      <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">
                         Ayuret
                       </span>
                     </a>

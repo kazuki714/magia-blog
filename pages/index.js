@@ -6,15 +6,29 @@ export default function Home({ blog }) {
   return (
     <div>
       <Nav />
-      <ul>
-        {blog.map((blog) => (
-          <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>
-              <a>{blog.title}</a>
+      <div class="w-full bg-white p-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-4 gap-12">
+          {blog.map((blog) => (
+            <Link href={`/blog/${blog.id}`} class="w-full block h-full">
+              <div key={blog.id}>
+                <a>
+                  <img alt="blog photo" src="image/inu.jpg" class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:w-80 cursor-pointer m-auto max-h-40 w-full object-cover"/>
+                  <div class="bg-white dark:bg-gray-800 w-full p-4">
+                    <p class="text-gray-800 dark:text-white text-xm font-medium mb-2">
+                      {blog.title}
+                    </p>
+                    <div class="flex flex-wrap justify-starts items-center mt-4">
+                      <div class="text-xs mr-2 py-1.5 px-4 text-grey-300 bg-green-200 rounded-2xl">
+                        #{blog.category.name}
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </Link>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
