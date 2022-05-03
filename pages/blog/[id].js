@@ -6,16 +6,20 @@ export default function BlogId({ blog }) {
   return (
     <main>
       <Nav />
-      <div class="w-full bg-white p-8 flex justify-center">
-        <div class="grid grid-cols-1 gap-1 ">
-          <img alt="blog photo" src="../image/inu.jpg" class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:h-100 md:w-85 m-auto max-w-80 w-full object-cover"/>
-          <p class="text-black text-2xl font-bold mb-2 mt-5">
+      <div class="w-full bg-white p-10 flex justify-center">
+        <div class="grid">
+          <img
+            class="overflow-hidden shadow-lg rounded-lg m-auto max-w-96 max-h-96 object-cover"
+            src={blog.eyecatch.url}
+            alt="blog photo"
+          />
+          <p class="text-black text-2xl font-bold mb-2 mt-5 max-w-96 max-h-96">
             {blog.title}
           </p>
-          <Moment format="YYYY/MM/DD" class="text-xs">
+          <Moment format="YYYY/MM/DD" class="text-xs max-w-96 max-h-96">
             {blog.publishedAt}
           </Moment>
-          <p class="flex flex-wrap text-black text-xs font-bold mb-2">
+          <p class="flex flex-wrap text-black text-xs font-bold mb-2 max-w-96 max-h-96">
             #{blog.category.name}
           </p>
           <div
@@ -23,8 +27,6 @@ export default function BlogId({ blog }) {
               __html: `${blog.content}`,
             }}
           />
-      
-
         </div>
       </div>
     </main>

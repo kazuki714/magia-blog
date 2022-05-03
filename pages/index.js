@@ -13,7 +13,11 @@ export default function Home({ blog }) {
             <Link href={`/blog/${blog.id}`} class="w-full block h-full">
               <div key={blog.id}>
                 <a>
-                  <img alt="blog photo" src="image/inu.jpg" class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:w-80 cursor-pointer m-auto max-h-40 w-full object-cover"/>
+                  <img
+                    class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:w-80 cursor-pointer m-auto max-h-60 w-full object-cover"
+                    src={blog.eyecatch.url}
+                    alt="blog photo"
+                  />
                   <div class="bg-transparent w-full p-4">
                     <p class="text-black text-xm font-medium mb-2">
                       {blog.title}
@@ -24,11 +28,6 @@ export default function Home({ blog }) {
                     <p class="flex flex-wrap text-black text-xs font-bold mb-2">
                       #{blog.category.name}
                     </p>
-                    {/* <div class="flex flex-wrap justify-starts items-center mt-4">
-                      <div class="text-xs mr-2 py-1.5 px-4 text-grey-300 bg-green-200 rounded-2xl">
-                        #{blog.category.name}
-                      </div>
-                    </div> */}
                   </div>
                 </a>
               </div>
