@@ -1,5 +1,6 @@
 import { client } from "../../libs/client";
 import { Nav } from "../../components/Nav";
+import Moment from 'react-moment';
 
 export default function BlogId({ blog }) {
   return (
@@ -11,8 +12,12 @@ export default function BlogId({ blog }) {
           <p class="text-black text-2xl font-bold mb-2 mt-5">
             {blog.title}
           </p>
-          <p>{blog.publishedAt}</p>
-          <p className="category">{blog.category && `${blog.category.name}`}</p>
+          <Moment format="YYYY/MM/DD" class="text-xs">
+            {blog.publishedAt}
+          </Moment>
+          <p class="flex flex-wrap text-black text-xs font-bold mb-2">
+            #{blog.category.name}
+          </p>
           <div
             dangerouslySetInnerHTML={{
               __html: `${blog.content}`,

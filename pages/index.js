@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 import { Nav } from "../components/Nav";
+import Moment from 'react-moment';
 
 export default function Home({ blog }) {
   return (
@@ -17,6 +18,9 @@ export default function Home({ blog }) {
                     <p class="text-black text-xm font-medium mb-2">
                       {blog.title}
                     </p>
+                    <Moment format="YYYY/MM/DD" class="text-xs">
+                      {blog.publishedAt}
+                    </Moment>
                     <p class="flex flex-wrap text-black text-xs font-bold mb-2">
                       #{blog.category.name}
                     </p>
