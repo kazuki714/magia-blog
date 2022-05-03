@@ -23,6 +23,8 @@ export default function BlogId({ blog }) {
               __html: `${blog.content}`,
             }}
           />
+      
+
         </div>
       </div>
     </main>

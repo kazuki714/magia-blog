@@ -329,6 +329,11 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
+"marked@^4.0.15":
+  "integrity" "sha512-esX5lPdTfG4p8LDkv+obbRCyOKzB+820ZZyMOXJZygZBHrH9b3xXR64X4kT3sPe9Nx8qQXbmcz6kFSMt4Nfk6Q=="
+  "resolved" "https://registry.npmjs.org/marked/-/marked-4.0.15.tgz"
+  "version" "4.0.15"
+
 "merge2@^1.3.0":
   "integrity" "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="
   "resolved" "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
