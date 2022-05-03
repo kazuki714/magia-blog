@@ -17,7 +17,7 @@ export default function Home({ blog }) {
                     <p class="text-black text-xm font-medium mb-2">
                       {blog.title}
                     </p>
-                    <p class="flex flex-wrap text-black text-xs font-medium mb-2">
+                    <p class="flex flex-wrap text-black text-xs font-bold mb-2">
                       #{blog.category.name}
                     </p>
                     {/* <div class="flex flex-wrap justify-starts items-center mt-4">

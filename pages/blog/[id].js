@@ -5,14 +5,21 @@ export default function BlogId({ blog }) {
   return (
     <main>
       <Nav />
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <p className="category">{blog.category && `${blog.category.name}`}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.content}`,
-        }}
-      />
+      <div class="w-full bg-white p-8 flex justify-center">
+        <div class="grid grid-cols-1 gap-1 ">
+          <img alt="blog photo" src="../image/inu.jpg" class="overflow-hidden shadow-lg rounded-lg h-90 w-90 md:h-100 md:w-85 m-auto max-w-80 w-full object-cover"/>
+          <p class="text-black text-2xl font-bold mb-2 mt-5">
+            {blog.title}
+          </p>
+          <p>{blog.publishedAt}</p>
+          <p className="category">{blog.category && `${blog.category.name}`}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${blog.content}`,
+            }}
+          />
+        </div>
+      </div>
     </main>
   );
 }
