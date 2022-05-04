@@ -1,34 +1,39 @@
 import { client } from "../../libs/client";
 import { Nav } from "../../components/Nav";
 import Moment from 'react-moment';
+import styles from '../../styles/Home.module.scss';
 
 export default function BlogId({ blog }) {
   return (
+    // <main className={styles.main}>
     <main>
       <Nav />
-      <div class="w-full bg-white p-10 flex justify-center">
-        <div class="grid">
+        <div class="container max-w-96 max-h-96 md:max-w-3xl m-auto mx-auto px-4 md:px-24">
           <img
             class="overflow-hidden shadow-lg rounded-lg m-auto max-w-96 max-h-96 object-cover"
             src={blog.eyecatch.url}
             alt="blog photo"
           />
-          <p class="text-black text-2xl font-bold mb-2 mt-5 max-w-96 max-h-96">
-            {blog.title}
-          </p>
-          <Moment format="YYYY/MM/DD" class="text-xs max-w-96 max-h-96">
-            {blog.publishedAt}
-          </Moment>
-          <p class="flex flex-wrap text-black text-xs font-bold mb-2 max-w-96 max-h-96">
-            #{blog.category.name}
-          </p>
-          <div
+
+          <div class="font-sans">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+              {blog.title}
+            </h1>
+            <p class="flex flex-wrap text-black text-xs font-bold mb-2">
+              #{blog.category.name}
+            </p>
+            <Moment format="YYYY/MM/DD" class="text-sm md:text-base font-normal text-gray-600">
+              {blog.publishedAt}
+            </Moment>
+          </div>
+          <div className='break-words whitespace-pre-wrap'
             dangerouslySetInnerHTML={{
               __html: `${blog.content}`,
             }}
+            className={styles.post}
           />
         </div>
-      </div>
+      {/* <div class="w-full h-full bg-white p-10 flex justify-center grid grid-cols-1"> */}
     </main>
   );
 }
@@ -52,3 +57,4 @@ export const getStaticProps = async (context) => {
     },
   };
 };
+
