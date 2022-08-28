@@ -32,7 +32,7 @@ export default function Post({
         pageImgH={eyecatch.height}
       />
       <article>
-        <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+        <PostHeader title={title} publish={publish} />
 
         <figure>
           <Image
