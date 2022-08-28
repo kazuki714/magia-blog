@@ -1,7 +1,7 @@
 import Meta from "../components/Meta";
 import Container from "../components/Container";
 import Hero from "../components/Hero";
-import PostBody from "../components/Postbody";
+import PostBody from "../components/PostBody";
 import Contact from "../components/Contact";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "../components/TwoColumn";
 import Accordion from "../components/Accordion";

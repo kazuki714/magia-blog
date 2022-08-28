@@ -1,7 +1,7 @@
 import { getAllPosts } from "../libs/client";
-import Meta from "../components/meta";
+import Meta from "../components/Meta";
 import Container from "../components/Container";
-import Posts from "../components/posts";
+import Posts from "../components/Posts";
 
 export default function Home({ posts }) {
   return (
