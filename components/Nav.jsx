@@ -22,17 +22,17 @@ export default function Nav() {
       <ul className={styles.list}>
         <li>
           <Link href="/">
-            <a onClick={closeNav}>Home</a>
+            <a onClick={closeNav}>Blog</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/portfolio">
+            <a onClick={closeNav}>Portfolio</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
             <a onClick={closeNav}>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog">
-            <a onClick={closeNav}>Blog</a>
           </Link>
         </li>
       </ul>
