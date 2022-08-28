@@ -11,6 +11,7 @@ export default function Posts({ posts }) {
             <a>
               <figure>
                 <Image
+                  className={styles.image}
                   src={eyecatch.url}
                   alt=""
                   layout="fill"

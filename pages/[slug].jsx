@@ -36,6 +36,7 @@ export default function Post({
 
         <figure>
           <Image
+            className="postimage"
             key={eyecatch.url}
             src={eyecatch.url}
             alt=""
@@ -45,6 +46,11 @@ export default function Post({
             sizes="{min-width: 1152px} 1152px, 100vw"
             priority
           />
+          <style jsx global>{`
+            .postimage {
+              border-radius: 10px;
+            }
+          `}</style>
         </figure>
 
         <PostBody>
