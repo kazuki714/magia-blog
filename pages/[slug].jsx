@@ -1,7 +1,7 @@
 import { getPostBySlug, getAllSlugs } from "../libs/client"
 import { extractText } from "../libs/extract-text"
 import { prevNextPost } from "../libs/prev-next-post"
-import Meta from "../components/meta"
+import Meta from "../components/Meta"
 import Container from "../components/Container"
 import PostHeader from "../components/PostHeader"
 import PostBody from "../components/PostBody"
