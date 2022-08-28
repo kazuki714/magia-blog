@@ -47,16 +47,10 @@ export default function Post({
           />
         </figure>
 
-        <TwoColumn>
-          <TwoColumnMain>
-            <PostBody>
-              <ConvertBody contentHTML={content} />
-            </PostBody>
-          </TwoColumnMain>
-          <TwoColumnSidebar>
-            <PostCategories categories={categories} />
-          </TwoColumnSidebar>
-        </TwoColumn>
+        <PostBody>
+          <PostCategories categories={categories} />
+          <ConvertBody contentHTML={content} />
+        </PostBody>
         <Pagination
           prevText={prevPost.title}
           prevUrl={`/${prevPost.slug}`}
