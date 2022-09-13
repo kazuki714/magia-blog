@@ -11,12 +11,12 @@ export default function Social({ iconSize = 'initial' }) {
   return (
     <ul className={styles.list} style={{ '--icon-size': iconSize }}>
       <li>
-        <a href="https://twitter.com/">
+        <a href="https://twitter.com/LUCUA1100">
           <FontAwesomeIcon icon={faTwitter} />
           <span className="sr-only">Twitter</span>
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="https://www.facebook.com/">
           <FontAwesomeIcon icon={faFacebookF} />
           <span className="sr-only">Facebook</span>
@@ -27,7 +27,7 @@ export default function Social({ iconSize = 'initial' }) {
           <FontAwesomeIcon icon={faGithub} />
           <span className="sr-only">GitHub</span>
         </a>
-      </li>
+      </li> */}
     </ul>
   )
 }
