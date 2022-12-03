@@ -1,4 +1,3 @@
-import styles from "../styles/covertbody.module.css";
 import parse from "html-react-parser";
 import Image from "next/image";
 
