@@ -26,11 +26,6 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/portfolio">
-            <a onClick={closeNav}>Portfolio</a>
-          </Link>
-        </li>
-        <li>
           <Link href="/about">
             <a onClick={closeNav}>About</a>
           </Link>

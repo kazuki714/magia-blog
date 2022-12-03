@@ -4,7 +4,7 @@ import styles from "../styles/logo.module.css";
 export default function Logo({ boxOn = false }) {
   return (
     <Link href="/">
-      <a className={boxOn ? styles.box : styles.basic}>Ayuret</a>
+      <a className={boxOn ? styles.box : styles.basic}>Magia Blog</a>
     </Link>
   )
 }

@@ -1,7 +1,7 @@
 export const siteMeta = {
-  siteTitle: 'Ayuret',
-  siteDesc: ' 日々の忘備録 ',
-  siteUrl: 'https://www.ayuret.com/',
+  siteTitle: 'Magia Blog',
+  siteDesc: 'サンプルブログ',
+  siteUrl: 'https://www.magia-blog.com/',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
   siteType: 'website',

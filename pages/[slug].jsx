@@ -5,7 +5,6 @@ import Meta from "../components/Meta"
 import Container from "../components/Container"
 import PostHeader from "../components/PostHeader"
 import PostBody from "../components/PostBody"
-import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "../components/TwoColumn"
 import ConvertBody from "../components/ConvertBody"
 import PostCategories from "../components/PostCategories"
 import Pagination from "../components/Pagination"
@@ -70,6 +69,7 @@ export default function Post({
 
 export async function getStaticPaths() {
   const allSlugs = await getAllSlugs()
+  console.log(allSlugs)
   return {
     paths: allSlugs.map(({ slug }) => `/${slug}`),
     fallback: 'blocking',
