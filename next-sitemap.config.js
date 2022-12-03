@@ -1,9 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: 'https://jirorious.com/',
+  siteUrl: 'https://blog.magia.runteq.jp/',
   exclude: ['/server-sitemap.xml'],
   robotsTxtOptions: {
-    additionalSitemaps: ['https://jirorious.com/server-sitemap.xml'],
+    additionalSitemaps: ['https://blog.magia.runteq.jp/server-sitemap.xml'],
   },
 }
 

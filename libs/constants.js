@@ -1,7 +1,7 @@
 export const siteMeta = {
   siteTitle: 'Magia Blog',
   siteDesc: 'サンプルブログ',
-  siteUrl: 'https://jirorious.com/',
+  siteUrl: 'https://blog.magia.runteq.jp/',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
   siteType: 'website',
